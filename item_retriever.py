@@ -1,12 +1,13 @@
 import json
 import requests
 from time import sleep
+from datetime import datetime
 
 ############## CONFIG ###############
 
-item_appid = '264710'							# The steam 'APP ID'
-item_currency = '1'								# The currency to retrieve the price in
-item_hash_name = 'Planet%204546B%20Postcard'	# The 'hashed name' of that specific market item , can be found from it's page's URL
+item_appid = '264710' 				# The steam 'APP ID'
+item_currency = '1' 				# The currency to retrieve the price in
+item_hash_name = 'Planet%204546B%20Postcard' 	# The 'hashed name' of that specific market item , can be found from it's page's URL
 
 #####################################
 
@@ -24,13 +25,15 @@ def GetItemData () :
 
 while True :
 
+	print ('/////////////////////////////////\n')
+
 	data = GetItemData ()
 
 	for i in data :
 
 		print (i + " : " + "%s" % (data[i]))
 
-	print ('#########\n')
+	print ('\n///////// -', datetime.now().strftime("%d/%m/%Y - %H:%M:%S"), '\n\n')
 		
 	sleep (300) # Don't decrease this, you can increase if you want.
 
