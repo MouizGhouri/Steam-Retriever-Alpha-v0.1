@@ -3,7 +3,7 @@ This is a very simple python console program written to retrieve data about a sp
 
 **USAGE :**
 
-When you look at the text, you will see some lines of code between two fancy comment lines, they are supposed to be the configuration to this program, i'll break it down step by step.
+When you look at the source code, you will see some lines of code between two fancy comment lines, they are supposed to be the configuration to this program, i'll break it down step by step.
 
 
     ############## CONFIG ###############
@@ -28,4 +28,4 @@ Finally , the `item_hash_name` , it can be easily found from the item's listing 
 
 ![](https://i.imgur.com/vbhZS9l.png)
 
-**That is it, save the file , and run the program.**
+**Simple isn't it ? Save the file , and run the program.**
